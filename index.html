@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adyant Srinivasan</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Adyant Srinivasan — machine learning engineer working on speech, audio, scientific computing, reinforcement learning, and intelligent systems.">
+<meta name="theme-color" content="#090d18">
+<title>Adyant Srinivasan</title>
+<style>
+:root{--bg:#090d18;--card:#111827;--soft:#151f32;--text:#f5f7fb;--muted:#9eabc0;--line:#ffffff18;--a:#77e6c4;--b:#90a9ff;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 8%,#90a9ff1c,transparent 28rem),radial-gradient(circle at 88% 28%,#77e6c412,transparent 26rem),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 36px),var(--max));margin:auto}.nav{position:sticky;top:0;z-index:20;background:#090d18c9;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:11px;align-items:center;font-weight:750}.mark{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(135deg,#77e6c424,#90a9ff22);font-size:12px}.links{display:flex;gap:24px}.links a{color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}
+.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center;padding:80px 0}.eyebrow{color:var(--a);font-size:12px;font-weight:800;letter-spacing:.14em;margin:0 0 16px}.hero h1{font-size:clamp(3rem,7vw,6.2rem);line-height:.98;letter-spacing:-.06em;margin:0 0 26px}.hero h1 span{color:transparent;background:linear-gradient(110deg,#fff 0,#90a9ff 48%,#77e6c4);background-clip:text;-webkit-background-clip:text}.lead{max-width:760px;color:var(--muted);font-size:clamp(1.05rem,1.7vw,1.22rem)}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:14px;border:1px solid var(--line);font-weight:750;font-size:14px}.primary{background:var(--a);color:#07120f;border-color:transparent}.secondary{background:#ffffff08}.chips,.tags{display:flex;flex-wrap:wrap;gap:8px}.chips{margin-top:30px}.chips span,.tags span{border:1px solid var(--line);border-radius:999px;color:var(--muted);background:#ffffff06}.chips span{padding:6px 10px;font-size:12px}
+.term{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#101625dd;box-shadow:0 25px 80px #0007;transform:rotate(1.3deg)}.dots{display:flex;gap:7px;padding:15px 17px;border-bottom:1px solid var(--line)}.dots i{width:9px;height:9px;border-radius:50%;background:#ffffff2b}.code{min-height:330px;padding:26px;font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace}.code .m{color:var(--muted)}.code .o{color:var(--a);margin-left:14px}
+section{padding:105px 0}.head{max-width:760px;margin-bottom:46px}.head h2,.contact h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1.04;letter-spacing:-.045em;margin:0 0 14px}.head p:last-child,.contact p,.about p,.card p,.timeline p,.research p{color:var(--muted)}
+.aboutgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:58px}.about{font-size:18px}.skills{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#ffffff05}.skills div{padding:20px 23px;border-bottom:1px solid var(--line)}.skills div:last-child{border-bottom:0}.skills h3{margin:0 0 5px;font-size:15px}.skills p{margin:0;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.card{min-height:345px;display:flex;flex-direction:column;padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,#ffffff08,#ffffff04);transition:.18s}.card:hover{transform:translateY(-4px);border-color:#77e6c447}.card.featured{min-height:390px;background:radial-gradient(circle at 100% 0,#77e6c418,transparent 22rem),linear-gradient(180deg,#ffffff09,#ffffff04)}.top{display:flex;justify-content:space-between;margin-bottom:48px;font-size:12px}.num{color:var(--a);font-family:ui-monospace,monospace}.type{color:var(--muted);letter-spacing:.09em;text-transform:uppercase}.card h3{font-size:clamp(1.5rem,3vw,2.05rem);letter-spacing:-.035em;margin:0 0 12px}.tags{margin-top:auto;padding-top:22px}.tags span{padding:5px 8px;font-size:11px}.go{margin-top:22px;font-weight:750;font-size:14px}.go:hover{color:var(--a)}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.metrics div{padding:12px;border:1px solid var(--line);border-radius:13px;background:#ffffff05}.metrics strong{display:block;color:var(--a);font-size:22px;line-height:1}.metrics span{display:block;color:var(--muted);font-size:10px;margin-top:6px}
+.research{border-top:1px solid var(--line)}.research article{display:grid;grid-template-columns:65px 1fr;gap:20px;padding:31px 0;border-bottom:1px solid var(--line)}.research b{color:var(--a);font-family:ui-monospace,monospace}.research h3{margin:0 0 8px}.research p{margin:0;max-width:850px}
+.timeline{border-left:1px solid var(--line);margin-left:7px}.timeline article{position:relative;display:grid;grid-template-columns:170px 1fr;gap:36px;padding:0 0 42px 34px}.timeline article:before{content:"";position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--a);box-shadow:0 0 0 7px #77e6c414}.when{color:var(--muted);font-size:14px}.timeline h3{margin:0 0 7px}.timeline p{margin:0}
+.contact{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:75px;padding:50px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(circle at 100% 0,#90a9ff24,transparent 26rem),#ffffff05}.contact>div:first-child{max-width:680px}.footer{min-height:90px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:13px}
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}.term{max-width:620px;transform:none}.aboutgrid,.grid{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}}
+@media(max-width:700px){.links{display:none}.hero{padding:62px 0}.hero h1{font-size:clamp(3rem,15vw,4.6rem)}section{padding:78px 0}.card{min-height:0;padding:23px}.top{margin-bottom:35px}.research article{grid-template-columns:38px 1fr}.timeline article{grid-template-columns:1fr;gap:6px;padding-left:26px}.contact{padding:28px 23px}.footer{flex-direction:column;justify-content:center;gap:5px}}
+</style>
 </head>
-
 <body>
-    <main>
-        <h1>Hi, I'm Adyant.</h1>
+<header class="nav"><div class="navin wrap"><a class="brand" href="#top"><span class="mark">AS</span><span>Adyant Srinivasan</span></a><nav class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></div></header>
+<main id="top">
+<section class="hero wrap">
+<div>
+<p class="eyebrow">MACHINE LEARNING · SPEECH · INTELLIGENT SYSTEMS</p>
+<h1>I build machine learning systems for <span>speech, audio, and complex real-world signals.</span></h1>
+<p class="lead">I'm Adyant Srinivasan, an Electrical & Computer Engineering graduate from UC Santa Barbara. My work spans speech and audio ML, deep learning, scientific computing, reinforcement learning, and robotics.</p>
+<div class="actions"><a class="btn primary" href="#projects">View my work</a><a class="btn secondary" href="https://github.com/ad-srvn" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+<div class="chips"><span>Speech & Audio ML</span><span>PyTorch</span><span>Scientific ML</span><span>Robotics</span></div>
+</div>
+<div class="term" aria-hidden="true"><div class="dots"><i></i><i></i><i></i></div><div class="code"><div><span class="m">$</span> whoami</div><div class="o">adyant_srinivasan</div><br><div><span class="m">$</span> interests</div><div class="o">speech_ml, deep_learning,<br>scientific_ml, robotics</div><br><div><span class="m">$</span> current_focus</div><div class="o">building robust ML systems</div></div></div>
+</section>
 
-        <p>
-            Machine learning engineer working on speech, audio,
-            deep learning, and intelligent systems.
-        </p>
+<section id="about" class="wrap"><div class="head"><p class="eyebrow">ABOUT</p><h2>Engineering across signals, models, and systems.</h2></div>
+<div class="aboutgrid"><div class="about"><p>I enjoy problems where machine learning has to work with noisy, structured, real-world data. My projects include speaker diarization, speech anti-spoofing, research copilots, PDE modeling, autonomous-driving environments, and decision-making under uncertainty.</p><p>I care about the full pipeline: representation, model design, evaluation, failure modes, and the software needed to turn an idea into a usable system.</p></div>
+<div class="skills"><div><h3>Machine Learning</h3><p>PyTorch · Transformers · scikit-learn · NumPy · SciPy · LangGraph</p></div><div><h3>Speech & Audio</h3><p>Speaker diarization · Anti-spoofing · ASR · ECAPA-TDNN · VAD · MFCC/CQCC</p></div><div><h3>Engineering</h3><p>Python · C++ · MATLAB · Julia · FastAPI · Linux · Docker · Git</p></div><div><h3>Robotics & RL</h3><p>ROS · SLAM · OpenCV · Gymnasium · PPO · Autonomous navigation</p></div></div></div>
+</section>
 
-        <a href="#projects">View my work</a>
-    </main>
+<section id="projects" class="wrap"><div class="head"><p class="eyebrow">FEATURED PROJECTS</p><h2>Selected work.</h2><p>Speech systems, research tooling, reinforcement learning, optimization, and computational engineering.</p></div>
+<div class="grid">
+<article class="card featured"><div class="top"><span class="num">01</span><span class="type">Speech ML</span></div><h3>Speaker Diarization</h3><p>End-to-end diarization with Silero VAD, ECAPA-TDNN speaker embeddings, agglomerative clustering, and an interactive waveform UI.</p><div class="tags"><span>ECAPA-TDNN</span><span>Silero VAD</span><span>FastAPI</span><span>WaveSurfer.js</span></div><a class="go" href="https://github.com/ad-srvn/speaker-diarization" target="_blank" rel="noreferrer">Explore project ↗</a></article>
+<article class="card featured"><div class="top"><span class="num">02</span><span class="type">Speech + RAG</span></div><h3>Speech Research Copilot</h3><p>Local research assistant that indexes speech and audio papers, retrieves evidence, answers research questions, and generates grounded experiment plans.</p><div class="tags"><span>LangGraph</span><span>Chroma</span><span>Ollama</span><span>Streamlit</span></div><a class="go" href="https://github.com/ad-srvn/speech-research-copilot" target="_blank" rel="noreferrer">Explore project ↗</a></article>
+<article class="card"><div class="top"><span class="num">03</span><span class="type">Reinforcement Learning</span></div><h3>RL Autonomous Driver</h3><p>Top-down autonomous-driving simulator where a PPO agent uses LIDAR-style observations to avoid obstacles, stay on-road, and maximize forward progress.</p><div class="tags"><span>Gymnasium</span><span>Stable-Baselines3</span><span>PPO</span><span>Pygame</span></div><a class="go" href="https://github.com/ad-srvn/Autonomous_driver_user_obstacles" target="_blank" rel="noreferrer">Explore project ↗</a></article>
+<article class="card"><div class="top"><span class="num">04</span><span class="type">Optimization</span></div><h3>Industrial Refrigeration Optimization</h3><p>Stochastic dynamic-programming controller exploiting thermal inertia, time-of-use pricing, and demand charges to reduce operating cost.</p><div class="metrics"><div><strong>18%</strong><span>reported cost savings</span></div><div><strong>12%</strong><span>reported energy reduction</span></div></div><div class="tags"><span>Dynamic Programming</span><span>MATLAB</span><span>Optimal Control</span></div><a class="go" href="https://github.com/ad-srvn/DP-Industrial-refrigeration" target="_blank" rel="noreferrer">Explore project ↗</a></article>
+<article class="card"><div class="top"><span class="num">05</span><span class="type">Scientific Computing</span></div><h3>Phone Thermal PDE Model</h3><p>3D steady-state thermal simulation comparing baseline, vapor-chamber, and conductive-skin phone designs under localized CPU and battery heating.</p><div class="tags"><span>PDE Toolbox</span><span>Finite Elements</span><span>MATLAB</span><span>Thermal Modeling</span></div><a class="go" href="https://github.com/ad-srvn/phone-thermal-pde-model" target="_blank" rel="noreferrer">Explore project ↗</a></article>
+<article class="card"><div class="top"><span class="num">06</span><span class="type">Multi-Agent Systems</span></div><h3>Automated Negotiation Experiments</h3><p>Reproducible bilateral and multilateral negotiation experiments comparing concession strategies with an opponent-aware aspiration policy and statistical evaluation.</p><div class="tags"><span>NegMAS</span><span>Python</span><span>Bootstrap CI</span><span>Permutation Tests</span></div><a class="go" href="https://github.com/ad-srvn/Negotiation-bot" target="_blank" rel="noreferrer">Explore project ↗</a></article>
+</div></section>
+
+<section id="research" class="wrap"><div class="head"><p class="eyebrow">RESEARCH</p><h2>From speech security to scientific ML.</h2></div>
+<div class="research"><article><b>A</b><div><h3>Speaker Anti-Spoofing</h3><p>Investigated countermeasures for synthetic and replay attacks on automatic speaker verification using acoustic and phase-aware representations including MFCC, CQCC, MGDCC, and speaker embeddings with GMM and deep residual classifiers.</p></div></article><article><b>B</b><div><h3>Neural & Numerical PDE Solvers</h3><p>Worked on neural numerical methods for nonlinear PDEs, including challenging Helmholtz and Navier–Stokes regimes, with PyTorch, Julia, sparse-matrix methods, and alternative decomposition strategies.</p></div></article></div>
+</section>
+
+<section id="experience" class="wrap"><div class="head"><p class="eyebrow">EXPERIENCE & EDUCATION</p><h2>Research-driven engineering.</h2></div>
+<div class="timeline"><article><div class="when">UC Santa Barbara</div><div><h3>Research Assistant</h3><p>Neural numerical solvers, sparse computation, diagnostics, and decomposition methods for nonlinear PDEs.</p></div></article><article><div class="when">Anna University</div><div><h3>Student Researcher</h3><p>Speech anti-spoofing countermeasures, signal processing, speaker representations, and deep classification models.</p></div></article><article><div class="when">UC Santa Barbara</div><div><h3>M.S. Electrical & Computer Engineering</h3><p>Graduate study across machine learning, signal processing, scientific computing, and intelligent systems.</p></div></article><article><div class="when">Anna University</div><div><h3>B.E. Electronics & Communication Engineering</h3><p>Foundation in signals, communications, electronics, programming, and machine learning.</p></div></article></div>
+</section>
+
+<section id="contact" class="wrap contact"><div><p class="eyebrow">CONTACT</p><h2>Let's build something interesting.</h2><p>I'm interested in machine learning, speech and audio, research engineering, and intelligent systems.</p></div><div class="actions"><a class="btn primary" href="mailto:ad.srvn@gmail.com">Email me</a><a class="btn secondary" href="https://github.com/ad-srvn" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
+</main>
+<footer class="footer wrap"><span>© <span id="y"></span> Adyant Srinivasan</span><a href="#top">Back to top ↑</a></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
